@@ -98,6 +98,7 @@ def EnableSNMPSetInterface( network_instance ):
 
       with open( conf_file, "w+" ) as f:
         f.write( new_conf )
+        f.close()
 
       # Try different SNMP binary
       # cur = './snmp_server -DALL -M -c {0} {1}'
